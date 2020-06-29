@@ -9,6 +9,7 @@ stages {
     }
   }
 
+
   stage('Git Clone') {
     steps {
       sh 'sudo rm -r*;sudo git clone https://github.com/ManikanthReddyAbbu/Terrafom_Jenkins.git'

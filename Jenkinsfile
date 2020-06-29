@@ -18,13 +18,13 @@ stages {
 
   stage('Terraform init') {
     steps {
-        sh 'sudo /home/ubuntu/terraform init ./jenkins'
+        sh 'sudo terraform init'
     }
   }
 
   stage('Terraform Plan') {
     steps {
-      sh 'sudo /home/ubuntu/terraform plan ./jenkins'
+      sh 'sudo terraform plan'
     }
   }
 

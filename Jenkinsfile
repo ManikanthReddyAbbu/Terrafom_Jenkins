@@ -12,7 +12,7 @@ stages {
 
   stage('Git Clone') {
     steps {
-      sh 'sudo rm -r Terraform_Jenkins/; git clone https://github.com/ManikanthReddyAbbu/Terrafom_Jenkins.git'
+      sh 'sudo rm -r Terraform_Jenkins/;sudo git clone https://github.com/ManikanthReddyAbbu/Terrafom_Jenkins.git'
     }
   }
 
@@ -30,7 +30,7 @@ stages {
 
   /*stage('Terraform apply') {
     steps {
-      // One or more steps need to be included within the steps block.
+      
     }
   }*/
 

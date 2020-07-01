@@ -10,11 +10,12 @@ stages {
   }
 
 
-  stage('Git Clone') {
+ /* stage('Git Clone') {
     steps {
-      sh 'sudo git clone https://github.com/ManikanthReddyAbbu/Terrafom_Jenkins.git'
+      sh 'sudo rm -r Terraform_Jenkins/;
+      sudo git clone https://github.com/ManikanthReddyAbbu/Terrafom_Jenkins.git'
     }
-  }
+  } */
 
   stage('Terraform init') {
     steps {
@@ -30,7 +31,7 @@ stages {
 
   /*stage('Terraform apply') {
     steps {
-
+      
       
     }
   }*/
